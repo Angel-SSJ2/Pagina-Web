@@ -1,0 +1,67 @@
+body {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(154, 173, 255);
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+}
+.card-body {
+    background-color: #dceeff;
+    border-color: #007bff;
+    border-width: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.bio-text {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos base para móviles */
+.container {
+    padding: 10px;
+}
+
+/* Para tablets (ancho mínimo 768px) */
+@media (min-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Para desktops (ancho mínimo 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
