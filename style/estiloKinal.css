@@ -32,6 +32,15 @@ body {
     align-items: center;
 }
 
+.boton{
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
 .logo {
     height: 50px;
     width: auto;
@@ -53,7 +62,7 @@ body {
 
 /* Hero */
 .hero {
-    background-color: #d5e2ff;
+    background-color: #0051ff;
     color: #fff;
     padding: 200px 0;
     text-align: center;
@@ -92,6 +101,7 @@ body {
 }
 
 .feature-grid {
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -103,6 +113,8 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: center;
+    cursor: pointer;
+    
 }
 
 .feature-card h3 {
