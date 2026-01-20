@@ -1,94 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-    padding: 10px;
-    font-family: Arial, sans-serif;
+    padding: 20px; 
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(154, 173, 255);
+    margin: 0;
 }
 
 h1 {
     color: #007bff;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 h3 {
-    color: #6c757d;
+    color: #333;
     margin-bottom: 15px;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1100px; 
     margin: auto;
-    text-align: center;
 }
 
-.card {
-    margin-bottom: 20px;
-}
-
-.card-header {
-    background-color: #007bff;
-    color: white;
-}
 .card-body {
-    background-color: #dceeff;
-    padding: 10px;
-    border-radius: 50px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 30px; 
+    border-radius: 30px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
 }
+
 .pasatiempos-titulo {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    font-weight: 600;
 }
 
 .lista-hobbies {
-    text-align: left; 
-    display: inline-block; 
-    max-width: 90%; 
-    margin: 0 auto; 
+    display: flex; 
+    flex-direction: row;      
+    justify-content: space-between; 
+    gap: 25px;        
+    list-style: none;
+    margin: 0;
 }
 
 .lista-hobbies li {
-    margin-bottom: 10px; /*para que no se vean muy juntos */
-    text-align: left; /
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .hobby-img {
-    display: block; /* imagen debajo del texto */
-    width: 255px;   /* Ajusta el ancho*/
-    height: auto;   /* Mantiene la proporción*/
-    margin-top: 10px; /*Separa la imagen del texto */
-    margin-bottom: 20px; /* Separa la imagen del siguiente punto de la lista */
-    border-radius: 10px; 
-    box-shadow: 0 2px 10px rgb(0, 13, 131); /* Una pequeña sombra para dar profundidad */
+    width: 100%; 
+    max-width: 280px;
+    height: 160px;
+    object-fit: cover;
+    margin-top: auto; 
+    padding-top: 15px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 13, 131, 0.3);
+    transition: transform 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.boton{
-    background-color: #007bff; 
+.hobby-img:hover {
+    transform: scale(1.08);
+}
+
+.boton-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.boton {
+    background-color: #000068;     
     color: white; 
-    padding: 10px 20px; 
+    padding: 12px 25px; 
     border: none; 
-    border-radius: 5px; 
+    border-radius: 8px; 
     cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+.boton:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Estilos base para móviles */
-.container {
-    padding: 10px;
-}
-
-/* Para tablets (ancho mínimo 768px) */
-@media (min-width: 768px) {
-    .container {
-        padding: 20px;
+@media (max-width: 768px) {
+    .lista-hobbies {
+        flex-direction: column; 
+        
     }
-    h1 {
-        font-size: 2rem;
+    
+    .card-body {
+        border-radius: 20px;
+    }
+
+    .hobby-img {
+        max-width: 100%;
+        height: auto;
     }
 }
-
-/* Para desktops (ancho mínimo 1024px) */
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1200px;
-    }
 }
-
